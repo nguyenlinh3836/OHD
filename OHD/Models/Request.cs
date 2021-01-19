@@ -11,7 +11,6 @@ namespace OHD.Models
         public DateTime Time { get; set; }
         public string Detail { get; set; }
         public enum Status { done,working }
-
-        public Status UpdateStatus { get; set; }
+        public Status UpdateStatus { get; set; }        
     }
 }
