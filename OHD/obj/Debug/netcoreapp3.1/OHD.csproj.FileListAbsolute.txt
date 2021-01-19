@@ -342,3 +342,4 @@ D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\staticwebassets\OHD.StaticWebAs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.dll
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.pdb
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.genruntimeconfig.cache
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout1.cshtml.g.cs
