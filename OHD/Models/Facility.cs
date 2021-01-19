@@ -7,7 +7,7 @@ namespace OHD.Models
 {
     public class Facility
     {
-        public string FacilityID { get; set; }
+        public int FacilityID { get; set; }
         public string FacilityName { get; set; }
     }
 }

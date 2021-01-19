@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace OHD.Models
 {
-    public class EFOHDRepository: IOHDRepository
+    public class EFOHDRepository:IOHDRepository
     {
         private OHDStoreContext context;
         public EFOHDRepository(OHDStoreContext ctx)
         {
             context = ctx;
         }
-        public IQueryable<Facility> Facilities => context.Facilities;
-
-
+        public IQueryable<Facility> Facilities => (IQueryable<Facility>)context.Facilities;
     }
 }
