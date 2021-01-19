@@ -12,7 +12,7 @@ namespace OHD.Models
 {
     public class SeedData
     {
-        public static void DataDrink(IApplicationBuilder app)
+        public static void EnsurePopulated(IApplicationBuilder app)
         {
             OHDStoreContext context = app.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<OHDStoreContext>();
             if (context.Database.GetPendingMigrations().Any())
@@ -25,7 +25,21 @@ namespace OHD.Models
                     new Facility
                     {
                        FacilityName="Library"
-                    });                   
+                    },
+                    new Facility
+                    {
+                        FacilityName = "Computer Room"
+                    },
+                    new Facility
+                    {
+                        FacilityName = "ClassRoom"
+                    },
+                    new Facility
+                    {
+                        FacilityName = "Swimming Pool"
+                    }
+                    );
+                context.SaveChanges();
             }
         }
     }
