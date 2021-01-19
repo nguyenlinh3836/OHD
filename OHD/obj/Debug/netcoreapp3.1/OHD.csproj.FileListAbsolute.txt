@@ -344,3 +344,4 @@ D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.pdb
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.genruntimeconfig.cache
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout1.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\Home\AboutUs.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\Home\Employee.cshtml.g.cs

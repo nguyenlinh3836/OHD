@@ -25,7 +25,11 @@ namespace OHD.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+        public IActionResult Employee()
         {
             return View();
         }

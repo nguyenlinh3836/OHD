@@ -37,7 +37,11 @@ namespace OHD.Models
                     new Facility
                     {
                         FacilityName = "Swimming Pool"
-                    }
+                    },
+                    new Facility
+                      {
+                          FacilityName = "Security"
+                      }
                     );
                 context.SaveChanges();
             }

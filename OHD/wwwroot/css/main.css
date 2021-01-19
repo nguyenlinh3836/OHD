@@ -1,0 +1,64 @@
+.breadcrumbs-area ul li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+}
+.breadcrumbs-area ul li {
+    display: inline-block;
+    color: #fea801;
+    font-size: 16px;
+    position: relative;
+    margin-right: 15px;
+    padding-right: 10px;
+}
+.form-group .form-control {
+    height: 45px;
+    background-color: #f8f8f8;
+    font-size: 14px;
+    color: #111111;
+    border-radius: 4px;
+    border: none;
+    padding: 5px 15px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.content{
+    width: 100%;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.Home{
+    float: left;
+    font-size: 18px;
+}
+.all{
+    font-size: 18px;
+    float: left;
+    margin-left: 20px;
+}
+.content1{
+    float: left;
+    width: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.data{
+    border: 1px solid lavender;
+}
+
+* {
+    box-sizing: border-box;
+}
