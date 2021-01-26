@@ -12,6 +12,7 @@ using OHD.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using OHD.Areas.Identity.Data;
+using OHD.Data;
 
 namespace OHD
 {
@@ -33,7 +34,7 @@ namespace OHD
                      Configuration["ConnectionStrings:OHDStoreConnection"]);
             });
             services.AddRazorPages();
-            services.AddScoped<IOHDRepository, EFOHDRepository>();
+            services.AddScoped<IOHDRepository, EFOHDRepository>();        
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -26,8 +26,15 @@ using OHD.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "D:\LEARN_PROJECT\OHD\OHD\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9be28fab4fcb80eeb8d553dd3a3fea3595bbc7ea", @"/Views/Home/CreateRequest.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"597046c2922153dd671f060843966a50f2b549a6", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5e0d4dcea6de02bfa83b9e50bbee704202fac915", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_CreateRequest : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -56,7 +63,7 @@ using OHD.Models;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9be28fab4fcb80eeb8d553dd3a3fea3595bbc7ea3247", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9be28fab4fcb80eeb8d553dd3a3fea3595bbc7ea3416", async() => {
                 WriteLiteral(@"
     <div class=""form-group"" >
         <label for=""exampleFormControlInput1"">Subject</label>
@@ -66,7 +73,7 @@ using OHD.Models;
         <label for=""exampleFormControlSelect1"">Facilities select</label>
         <select class=""form-control"" id=""exampleFormControlSelect1"">
             ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9be28fab4fcb80eeb8d553dd3a3fea3595bbc7ea3860", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9be28fab4fcb80eeb8d553dd3a3fea3595bbc7ea4029", async() => {
                     WriteLiteral("Library");
                 }
                 );
@@ -80,7 +87,7 @@ using OHD.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9be28fab4fcb80eeb8d553dd3a3fea3595bbc7ea4887", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9be28fab4fcb80eeb8d553dd3a3fea3595bbc7ea5056", async() => {
                     WriteLiteral("Swimming Pool");
                 }
                 );
@@ -94,7 +101,7 @@ using OHD.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9be28fab4fcb80eeb8d553dd3a3fea3595bbc7ea5920", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9be28fab4fcb80eeb8d553dd3a3fea3595bbc7ea6089", async() => {
                     WriteLiteral("Security");
                 }
                 );
@@ -108,7 +115,7 @@ using OHD.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9be28fab4fcb80eeb8d553dd3a3fea3595bbc7ea6948", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9be28fab4fcb80eeb8d553dd3a3fea3595bbc7ea7117", async() => {
                     WriteLiteral("4");
                 }
                 );

@@ -18,13 +18,14 @@ namespace OHD.Areas.Identity
             builder.ConfigureServices((context, services) => {
                 services.AddDbContext<OHDContext>(options =>
                     options.UseSqlServer(
-                        context.Configuration.GetConnectionString("OHDContextConnection")));
+                        context.Configuration.GetConnectionString("OHDContextConnection")));              
 
                 services.AddDefaultIdentity<OHDUser>(options => {
                     options.SignIn.RequireConfirmedAccount = false;
                     options.Password.RequireLowercase = false;
                     options.Password.RequireUppercase = false;
                 })
+                    .AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<OHDContext>();
             });
         }

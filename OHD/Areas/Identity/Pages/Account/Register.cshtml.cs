@@ -24,17 +24,20 @@ namespace OHD.Areas.Identity.Pages.Account
         private readonly UserManager<OHDUser> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
         public RegisterModel(
             UserManager<OHDUser> userManager,
             SignInManager<OHDUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+             RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _roleManager = roleManager;
         }
 
         [BindProperty]
@@ -79,10 +82,14 @@ namespace OHD.Areas.Identity.Pages.Account
             {
                 Response.Redirect("/");
             }
+            IdentityRole AdminManager = new IdentityRole { Name = "Administrator" };
+            IdentityRole UserManager = new IdentityRole { Name = "User" };
+            IdentityRole EmployeeManager = new IdentityRole { Name = "Employee" };
+            await _roleManager.CreateAsync(AdminManager);
+            await _roleManager.CreateAsync(UserManager);
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
-
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             returnUrl = returnUrl ?? Url.Content("~/");
@@ -93,9 +100,7 @@ namespace OHD.Areas.Identity.Pages.Account
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User created a new account with password.");
-                    await _userManager.AddToRoleAsync(user, Enums.Roles.User.ToString());                 
-
+                    _logger.LogInformation("User created a new account with password.");                   
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(
