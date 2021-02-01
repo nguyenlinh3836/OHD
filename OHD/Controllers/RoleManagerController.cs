@@ -1,20 +1,26 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using OHD.Areas.Identity.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using OHD.Models;
 
 namespace OHD.Controllers
 {
     public class RoleManagerController : Controller
     {
+        
         private RoleManager<IdentityRole> roleManager;
-        public RoleManagerController(RoleManager<IdentityRole> roleMgr)
+        private UserManager<OHDUser> userManager;
+        public RoleManagerController(RoleManager<IdentityRole> roleMgr, UserManager<OHDUser> userMgr)
         {
             roleManager = roleMgr;
+            userManager = userMgr;
         }
         public ViewResult Index() => View(roleManager.Roles);
         private void Errors(IdentityResult result)
@@ -53,6 +59,57 @@ namespace OHD.Controllers
             else
                 ModelState.AddModelError("", "No role found");
             return View("Index", roleManager.Roles);
+        }
+        public async Task<IActionResult> Update(string id)
+        {
+            IdentityRole role = await roleManager.FindByIdAsync(id);
+            List<OHDUser> members = new List<OHDUser>();
+            List<OHDUser> nonMembers = new List<OHDUser>();
+            foreach (OHDUser user in userManager.Users)
+            {
+                var list = await userManager.IsInRoleAsync(user, role.Name) ? members : nonMembers;
+                list.Add(user);
+            }
+            return View(new RoleEdit
+            {
+                Role = role,
+                Members = members,
+                NonMembers = nonMembers
+            });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(RoleModification model)
+        {
+            IdentityResult result;
+            if (ModelState.IsValid)
+            {
+                foreach (string userId in model.AddIds ?? new string[] { })
+                {
+                    OHDUser user = await userManager.FindByIdAsync(userId);
+                    if (user != null)
+                    {
+                        result = await userManager.AddToRoleAsync(user, model.RoleName);
+                        if (!result.Succeeded)
+                            Errors(result);
+                    }
+                }
+                foreach (string userId in model.DeleteIds ?? new string[] { })
+                {
+                    OHDUser user = await userManager.FindByIdAsync(userId);
+                    if (user != null)
+                    {
+                        result = await userManager.RemoveFromRoleAsync(user, model.RoleName);
+                        if (!result.Succeeded)
+                            Errors(result);
+                    }
+                }
+            }
+
+            if (ModelState.IsValid)
+                return RedirectToAction(nameof(Index));
+            else
+                return await Update(model.RoleId);
         }
     }
 }

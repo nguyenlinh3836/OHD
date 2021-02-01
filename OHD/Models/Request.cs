@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OHD.Areas.Identity.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,6 +12,8 @@ namespace OHD.Models
         public DateTime Time { get; set; }
         public string Detail { get; set; }
         public enum Status { done,working }
-        public Status UpdateStatus { get; set; }        
+        public Status UpdateStatus { get; set; }    
+        public string UserID { get; set; }
+        public virtual OHDUser Employee { get; set; }
     }
 }

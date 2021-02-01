@@ -353,3 +353,10 @@ D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Acco
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\RoleManager\Index.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\RoleManager\Create.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Pages\Role\Index.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Pages\Role\_StatusMessage.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Pages\Role\_ViewImports.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Pages\Role\_ViewStart.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Pages\Role\Add.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Pages\Role\AddUserRole.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Pages\Role\Users.cshtml.g.cs

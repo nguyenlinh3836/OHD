@@ -27,6 +27,13 @@ using OHD.Models;
 #line hidden
 #nullable disable
 #nullable restore
+#line 3 "D:\LEARN_PROJECT\OHD\OHD\Views\_ViewImports.cshtml"
+using OHD.Data;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 4 "D:\LEARN_PROJECT\OHD\OHD\Views\_ViewImports.cshtml"
 using Microsoft.AspNetCore.Identity;
 
@@ -34,7 +41,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"607462c68d23cffd28d4390eef0c10197236897f", @"/Views/Home/AboutUs.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5e0d4dcea6de02bfa83b9e50bbee704202fac915", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2d36c1a3bf1a72daa36ddc7792267487af265aa3", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_AboutUs : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
