@@ -96,9 +96,9 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" asp-controller="Home" asp-action="Employee">List Employee</a>
-                        <a class="collapse-item" href="register.html">List User</a>
+                        <a class="collapse-item" asp-page="/Users" asp-area="Admin">List User</a>
                         <a class="collapse-item" href="forgot-password.html">List Request</a>
-                        <a class="collapse-item" asp-controller="RoleManager" asp-action="Index">Add Role</a>
+                        <a class="collapse-item" asp-area="Admin" asp-page="/Role/Index">Add Role</a>
                     </div>
                 </div>
             </li>

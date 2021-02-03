@@ -71,7 +71,7 @@ namespace OHD.Areas.Admin.Pages.Role
             else
             {
                 // Update add and remove
-                StatusMessage = "Just Update";
+                StatusMessage = "Update Done";
                 if (Input.RoleNames == null) Input.RoleNames = new string[] { };
                 foreach (var rolename in Input.RoleNames)
                 {
