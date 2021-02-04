@@ -54,7 +54,7 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="cards.html">Information</a>
+                        <a class="collapse-item" asp-area="Identity" asp-page="/Account/Manage/PersonalData">Information</a>
                         <a class="collapse-item" href="cards.html">ResetPassword</a>
                     </div>
                 </div>
@@ -95,10 +95,10 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" asp-controller="Home" asp-action="Employee">List Employee</a>
-                        <a class="collapse-item" asp-page="/Users" asp-area="Admin">List User</a>
+                        <a class="collapse-item" asp-controller="Home" asp-action="Employee">List User</a>
+                        <a class="collapse-item" asp-area="Admin" asp-page="/Role/Users" >List User & set role</a>
                         <a class="collapse-item" href="forgot-password.html">List Request</a>
-                        <a class="collapse-item" asp-area="Admin" asp-page="/Role/Index">Add Role</a>
+                        <a class="collapse-item" asp-area="Admin" asp-page="/Role/Index">Manage Role</a>
                     </div>
                 </div>
             </li>
