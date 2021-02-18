@@ -310,9 +310,6 @@ D:\LEARN_PROJECT\OHD\OHD\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.csprojAssemblyReference.cache
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.AssemblyInfoInputs.cache
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.AssemblyInfo.cs
-D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.csproj.CoreCompileInputs.cache
-D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.MvcApplicationPartsAssemblyInfo.cs
-D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.MvcApplicationPartsAssemblyInfo.cache
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.RazorAssemblyInfo.cache
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.RazorAssemblyInfo.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.TagHelpers.input.cache
@@ -360,3 +357,14 @@ D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Pages\Role\_V
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Pages\Role\Add.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Pages\Role\AddUserRole.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Pages\Role\Users.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\AccessDenied.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\Email.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\bin\Debug\netcoreapp3.1\MailKit.dll
+D:\LEARN_PROJECT\OHD\OHD\bin\Debug\netcoreapp3.1\MimeKit.dll
+D:\LEARN_PROJECT\OHD\OHD\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.csproj.CoreCompileInputs.cache
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.MvcApplicationPartsAssemblyInfo.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.MvcApplicationPartsAssemblyInfo.cache

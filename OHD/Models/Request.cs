@@ -14,6 +14,7 @@ namespace OHD.Models
         public enum Status { done,working }
         public Status UpdateStatus { get; set; }    
         public string UserID { get; set; }
+        public string EmployeeID { get; set; }
         public virtual OHDUser Employee { get; set; }
     }
 }

@@ -23,7 +23,7 @@ namespace OHD.Areas.Admin.Pages.Role
 
             [Required(ErrorMessage = "Must Insert Role Name")]
             [Display(Name = " Role Name")]
-            [StringLength(100, ErrorMessage = "{0} dài {2} đến {1} ký tự.", MinimumLength = 3)]
+            [StringLength(100, ErrorMessage = "{0} lenght {2} to {1} character.", MinimumLength = 3)]
             public string Name { set; get; }
 
         }
@@ -76,7 +76,7 @@ namespace OHD.Areas.Admin.Pages.Role
 
             if (IsUpdate)
             {
-                // CẬP NHẬT
+                // Update
                 if (Input.ID == null)
                 {
                     ModelState.Clear();
@@ -87,7 +87,7 @@ namespace OHD.Areas.Admin.Pages.Role
                 if (result != null)
                 {
                     result.Name = Input.Name;
-                    // Cập nhật tên Role
+                    // Update name Role
                     var roleUpdateRs = await _roleManager.UpdateAsync(result);
                     if (roleUpdateRs.Succeeded)
                     {
