@@ -9,5 +9,6 @@ namespace OHD.Models
     {
         public int FacilityID { get; set; }
         public string FacilityName { get; set; }
+        public virtual ICollection<Employee> Employees { get; set; }
     }
 }

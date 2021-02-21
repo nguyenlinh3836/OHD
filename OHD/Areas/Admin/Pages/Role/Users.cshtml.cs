@@ -28,13 +28,13 @@ namespace OHD.Areas.Admin.Pages.Role
         }
         public List<UserInList> users;
         public int totalPages { set; get; }
-        [TempData] // Sử dụng Session
+        [TempData] // Use Session
         public string StatusMessage { get; set; }
 
         [BindProperty(SupportsGet = true)]
         public int pageNumber { set; get; }
 
-        public IActionResult OnPost() => NotFound("Cấm post");
+        public IActionResult OnPost() => NotFound("Denided post");
         public async Task<IActionResult> OnGet()
         {
 

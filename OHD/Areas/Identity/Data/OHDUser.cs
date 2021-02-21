@@ -16,8 +16,7 @@ namespace OHD.Areas.Identity.Data
         public string FirstName { get; set; }
         [PersonalData]
         [Column(TypeName = "nvarchar(100)")]
-        public string LastName { get; set; }
-      
+        public string LastName { get; set; }    
        
 
     }

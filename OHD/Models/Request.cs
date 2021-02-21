@@ -15,6 +15,7 @@ namespace OHD.Models
         public Status UpdateStatus { get; set; }    
         public string UserID { get; set; }
         public string EmployeeID { get; set; }
-        public virtual OHDUser Employee { get; set; }
+        public virtual OHDUser User { get; set; }
+        public virtual Employee Employee { get; set; }
     }
 }

@@ -13,6 +13,8 @@ namespace OHD.Models
         {
             context = ctx;
         }
-        public IQueryable<Facility> Facilities => (IQueryable<Facility>)context.Facilities;
+        public IQueryable<Facility> Facilities => context.Facilities;
+        public IQueryable<Request> Requests => context.Requests;
+        public IQueryable<Employee> Employees => context.Employees;
     }
 }

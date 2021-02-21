@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using OHD.Areas.Identity.Data;
 using OHD.Models;
 
 namespace OHD.Controllers
@@ -14,6 +15,7 @@ namespace OHD.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private OHDStoreContext context;
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -32,11 +34,8 @@ namespace OHD.Controllers
         public IActionResult Employee()
         {
             return View();
-        }
-        public IActionResult CreateRequest()
-        {
-            return View();
-        }
+        }   
+          
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

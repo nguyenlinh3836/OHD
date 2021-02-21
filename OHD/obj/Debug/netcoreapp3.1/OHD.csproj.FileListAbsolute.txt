@@ -342,14 +342,11 @@ D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.genruntimeconfig.cache
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout1.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\Home\AboutUs.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\Home\Employee.cshtml.g.cs
-D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\Home\CreateRequest.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
-D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\RoleManager\Index.cshtml.g.cs
-D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\RoleManager\Create.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Pages\Role\Index.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Pages\Role\_StatusMessage.cshtml.g.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Pages\Role\_ViewImports.cshtml.g.cs
@@ -368,3 +365,7 @@ D:\LEARN_PROJECT\OHD\OHD\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.csproj.CoreCompileInputs.cache
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.MvcApplicationPartsAssemblyInfo.cs
 D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\OHD.MvcApplicationPartsAssemblyInfo.cache
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AssignRequest.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\Employee\ListRequest.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\NavigationMenu\Default.cshtml.g.cs
+D:\LEARN_PROJECT\OHD\OHD\obj\Debug\netcoreapp3.1\Razor\Views\User\Index.cshtml.g.cs

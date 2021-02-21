@@ -11,5 +11,7 @@ namespace OHD.Areas.Identity.Data
     {
         public OHDStoreContext(DbContextOptions<OHDStoreContext> options) : base(options) { }
         public DbSet<Facility> Facilities { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Request> Requests { get; set; }
     }
 }

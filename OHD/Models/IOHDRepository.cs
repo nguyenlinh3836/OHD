@@ -8,5 +8,7 @@ namespace OHD.Models
     public interface IOHDRepository
     {
         IQueryable<Facility> Facilities { get; }
+        IQueryable<Request> Requests { get; }
+        IQueryable<Employee> Employees { get; }
     }
 }

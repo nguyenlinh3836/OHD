@@ -5,9 +5,10 @@ using System.Threading.Tasks;
 
 namespace OHD.Models
 {
-    public class Job
+    public class Status
     {
-        public int JobId { get; set; }
-        public string JobName { get; set; }
+        public int Id { get; set; }
+        public string DisplayName { get; set; }
+
     }
 }

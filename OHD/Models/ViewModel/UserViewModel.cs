@@ -7,5 +7,9 @@ namespace OHD.Models.ViewModel
 {
     public class UserViewModel
     {
+        public IEnumerable<Facility> Facilities { get; set; }
+        public IEnumerable<Request> Requests { get; set; }
+        public PageInfo PageInfo { get; set; }
+        public string CurrentGenre { get; set; }
     }
 }
