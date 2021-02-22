@@ -15,9 +15,8 @@ namespace OHD.Models
         public string Gender { get; set; }
         [Column(TypeName = "varchar(150)")]
         public string Address { get; set; }
-
         public Facility Facility { get; set; }
-        public string OHDID { get; set; }
+        public string IdentityID { get; set; }
         public OHDUser OHDUser { get; set; }
 
     }

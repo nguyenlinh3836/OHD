@@ -28,7 +28,7 @@ namespace OHD.Models
         public string Country { get; set; }
         [Column(TypeName = "varchar(50)")]
         public string City { get; set; }
-        public string OHDID { get; set; }
+        public string IdentityID { get; set; }
         public OHDUser OHDUser { get; set; }
     }
 }

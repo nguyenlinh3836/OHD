@@ -27,12 +27,12 @@ namespace OHD.Data
             builder.Entity<OHDUser>()
                 .HasOne(b => b.Customer)
                 .WithOne(i => i.OHDUser)
-                .HasForeignKey<Customer>(b => b.OHDID);
+                .HasForeignKey<Customer>(b => b.IdentityID);
 
             builder.Entity<OHDUser>()
-               .HasOne(b => b.Employee)
-               .WithOne(i => i.OHDUser)
-               .HasForeignKey<Customer>(b => b.OHDID);
+               .HasOne(c => c.Employee)
+               .WithOne(j => j.OHDUser)
+               .HasForeignKey<Customer>(k => k.IdentityID);
 
             base.OnModelCreating(builder);      
         }
