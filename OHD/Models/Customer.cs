@@ -11,6 +11,7 @@ namespace OHD.Models
 {
     public class Customer
     {
+        [Key]
         public int CustomerId { get; set; }
         [Column(TypeName = "varchar(50)")]
         public string FirstName { get; set; }
@@ -29,6 +30,6 @@ namespace OHD.Models
         [Column(TypeName = "varchar(50)")]
         public string City { get; set; }
         public string IdentityID { get; set; }
-        public OHDUser OHDUser { get; set; }
+        public virtual OHDUser OHDUser { get; set; }
     }
 }

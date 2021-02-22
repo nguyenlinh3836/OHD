@@ -27,7 +27,7 @@ namespace OHD.Data
             builder.Entity<OHDUser>()
                 .HasOne(b => b.Customer)
                 .WithOne(i => i.OHDUser)
-                .HasForeignKey<Customer>(b => b.IdentityID);
+                .HasForeignKey<Customer>(d => d.IdentityID);
 
             builder.Entity<OHDUser>()
                .HasOne(c => c.Employee)
