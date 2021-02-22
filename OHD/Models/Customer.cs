@@ -30,6 +30,8 @@ namespace OHD.Models
         [Column(TypeName = "varchar(50)")]
         public string City { get; set; }
         public string IdentityID { get; set; }
+        [ForeignKey("IdentityID")]
         public virtual OHDUser OHDUser { get; set; }
+        public ICollection<Request> Request { get; set; }
     }
 }

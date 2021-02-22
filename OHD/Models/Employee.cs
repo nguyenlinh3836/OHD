@@ -19,7 +19,9 @@ namespace OHD.Models
         public string Address { get; set; }
         public Facility Facility { get; set; }
         public string IdentityID { get; set; }
+        [ForeignKey("IdentityID")]
         public virtual OHDUser OHDUser { get; set; }
+        public ICollection<Request> Request { get; set; }
 
     }
 }

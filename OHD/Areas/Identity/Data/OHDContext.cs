@@ -23,17 +23,7 @@ namespace OHD.Data
         public DbSet<Customer> Customers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
-        {
-            builder.Entity<OHDUser>()
-                .HasOne(b => b.Customer)
-                .WithOne(i => i.OHDUser)
-                .HasForeignKey<Customer>(d => d.IdentityID);
-
-            builder.Entity<OHDUser>()
-               .HasOne(c => c.Employee)
-               .WithOne(j => j.OHDUser)
-               .HasForeignKey<Customer>(k => k.IdentityID);
-
+        {         
             base.OnModelCreating(builder);      
         }
         
