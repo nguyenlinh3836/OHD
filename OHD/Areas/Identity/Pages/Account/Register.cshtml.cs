@@ -48,17 +48,7 @@ namespace OHD.Areas.Identity.Pages.Account
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
 
         public class InputModel
-        {
-            [Required]
-            [DataType(DataType.Text)]
-            [Display(Name = "FirstName")]
-            public string FirstName { get; set; }
-
-            [Required]
-            [DataType(DataType.Text)]
-            [Display(Name = "LastName")]
-            public string LastName { get; set; }
-
+        {         
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
@@ -91,7 +81,7 @@ namespace OHD.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new OHDUser { UserName = Input.Email, Email = Input.Email, FirstName = Input.FirstName, LastName = Input.LastName };
+                var user = new OHDUser { UserName = Input.Email, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
@@ -123,7 +113,6 @@ namespace OHD.Areas.Identity.Pages.Account
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
             }
-
             // If we got this far, something failed, redisplay form
             return Page();
         }

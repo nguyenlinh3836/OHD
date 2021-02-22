@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using OHD.Areas.Identity.Data;
+using OHD.Models;
 
 namespace OHD.Data
 {
@@ -15,11 +16,26 @@ namespace OHD.Data
             : base(options)
         {
         }
+       
+        public DbSet<Facility> Facilities { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Request> Requests { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            base.OnModelCreating(builder);
-      
+            builder.Entity<OHDUser>()
+                .HasOne(b => b.Customer)
+                .WithOne(i => i.OHDUser)
+                .HasForeignKey<Customer>(b => b.OHDID);
+
+            builder.Entity<OHDUser>()
+               .HasOne(b => b.Employee)
+               .WithOne(i => i.OHDUser)
+               .HasForeignKey<Customer>(b => b.OHDID);
+
+            base.OnModelCreating(builder);      
         }
+        
     }
 }

@@ -14,7 +14,7 @@ namespace OHD.Models
     {
         public static void EnsurePopulated(IApplicationBuilder app)
         {
-            OHDStoreContext context = app.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<OHDStoreContext>();
+            OHDContext context = app.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<OHDContext>();
             if (context.Database.GetPendingMigrations().Any())
             {
                 context.Database.Migrate();

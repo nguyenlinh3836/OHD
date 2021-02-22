@@ -29,9 +29,9 @@ namespace OHD
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<OHDStoreContext>(opts => {
+            services.AddDbContext<OHDContext>(opts => {
                 opts.UseSqlServer(
-                     Configuration["ConnectionStrings:OHDStoreConnection"]);
+                     Configuration["ConnectionStrings:OHDContextConnection"]);
             });
             services.AddRazorPages();
             services.AddScoped<IOHDRepository, EFOHDRepository>();        

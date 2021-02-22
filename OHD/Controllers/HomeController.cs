@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using OHD.Areas.Identity.Data;
+using OHD.Data;
 using OHD.Models;
 
 namespace OHD.Controllers
@@ -15,7 +16,7 @@ namespace OHD.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private OHDStoreContext context;
+        private OHDContext context;
 
         public HomeController(ILogger<HomeController> logger)
         {
