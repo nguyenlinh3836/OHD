@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using OHD.Areas.Identity.Data;
+using OHD.Data;
 
 namespace OHD.Areas.Identity.Pages.Account
 {
@@ -21,14 +22,20 @@ namespace OHD.Areas.Identity.Pages.Account
         private readonly UserManager<OHDUser> _userManager;
         private readonly SignInManager<OHDUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        private OHDContext _context;
+        private RoleManager<IdentityRole> _roleManager;
 
         public LoginModel(SignInManager<OHDUser> signInManager, 
             ILogger<LoginModel> logger,
-            UserManager<OHDUser> userManager)
+            UserManager<OHDUser> userManager,
+            OHDContext context,
+            RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
+            _context = context;
+            _roleManager = roleManager;
         }
 
         [BindProperty]
@@ -57,10 +64,13 @@ namespace OHD.Areas.Identity.Pages.Account
 
         public async Task OnGetAsync(string returnUrl = null)
         {
-            if (User.Identity.IsAuthenticated)
-            {
-                Response.Redirect("/");
-            }
+
+            await _roleManager.CreateAsync(new IdentityRole("Administrator"));
+            await _roleManager.CreateAsync(new IdentityRole("Manager"));
+            await _roleManager.CreateAsync(new IdentityRole("Employee"));
+            await _roleManager.CreateAsync(new IdentityRole("Customer"));
+            await _roleManager.CreateAsync(new IdentityRole("User"));          
+
             if (!string.IsNullOrEmpty(ErrorMessage))
             {
                 ModelState.AddModelError(string.Empty, ErrorMessage);
