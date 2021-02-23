@@ -1,0 +1,136 @@
+﻿
+
+
+.panel {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+    .panel .panel-heading,
+    .panel .panel-body,
+    .panel .panel-footer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .panel .panel-heading {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+        .panel .panel-heading .panel-title {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+    .panel .panel-body {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    .panel .panel-note {
+        font-size: 13px;
+        line-height: 2.6;
+        color: #777777;
+    }
+
+        .panel .panel-note i {
+            font-size: 16px;
+            margin-right: 3px;
+        }
+
+    .panel .right {
+        position: absolute;
+        right: 20px;
+        top: 32%;
+    }
+
+    .panel.panel-headline .panel-heading {
+        border-bottom: none;
+    }
+
+        .panel.panel-headline .panel-heading .panel-title {
+            margin-bottom: 8px;
+            font-size: 22px;
+            font-weight: normal;
+        }
+
+        .panel.panel-headline .panel-heading .panel-subtitle {
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #8D99A8;
+        }
+
+    .panel.panel-scrolling .btn-bottom {
+        margin-bottom: 30px;
+    }
+
+    .panel .table1 {
+        margin-top: 50px;
+    }
+
+        .panel .table1 > thead > tr > td,
+        .panel .table1 > thead > tr > th,
+        .panel .table1 > tbody > tr > td,
+        .panel .table1 > tbody > tr > th,
+        .panel .table1 > tfoot > tr > td,
+        .panel .table1 > tfoot > tr > th {
+            text-align: center;
+        }
+
+.table1 .table-hover > thead > tbody {
+    margin-left: 20px;
+}
+
+.badge.bg-danger {
+    background: red;
+}
+
+.panel .table1 > tbody > tr > td div {
+    height: auto;
+    width: 450px;
+    overflow: scroll;
+}
+
+.panel-heading.chage button {
+    float: right;
+}
+
+.right-heading {
+    float: right;
+    width: 300px;
+    margin-top: -26px;
+}
+
+.chage {
+    float: left;
+}
+
+.right-heading a {
+    margin: 0px 30px;
+}
+
+.exit {
+    width: 125px;
+    float: right;
+}
+
+.chage a {
+    border-radius: 3px;
+    border: 1px solid;
+    padding: 5px 10px;
+}
+
+.exit a {
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
